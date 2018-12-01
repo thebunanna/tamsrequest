@@ -1,0 +1,22 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.flexiboard {
+  display: flex;
+  background-color: red;
+  height: 100%;
+}
+
+.flexiboard > .box {
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+  background-color: grey;
+}
+.butto {
+  width: 50%;
+  transform: translateX(50%);
+  margin: auto;
+}
