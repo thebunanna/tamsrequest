@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Modal, Button, Row, Col} from 'react-materialize'
 
 class Requests extends Component {
     constructor (props) {
@@ -16,20 +16,25 @@ class Requests extends Component {
     onHover() {
         return;
     }
-    render() {
-        
+    render() { 
         return (
-            <div className='box'>
+            <Modal trigger={
                 <div>
-                    {this.props.type}
+                    <div>
+                        {this.props.type}
+                    </div>                
+                    <div>
+                        Reward:
+                        {this.props.reward}
+                    </div>                
                 </div>
-                <div>
-                    {this.props.pic}
-                </div>
-                <div>
-                    {this.props.reward}
-                </div>                
-            </div>
+            }
+            fixedFooter
+            header={this.props.name}>
+            {this.props.desc}
+            
+            </Modal>
+            
         )
     }
 }

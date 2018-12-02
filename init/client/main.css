@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 
-.flexiboard > .box {
+.flexiboard > div {
   margin: 10px;
   height: 200px;
   width: 150px;
@@ -19,4 +19,16 @@ body {
   width: 50%;
   transform: translateX(50%);
   margin: auto;
+}
+.modal {
+  width: 100vh;
+  height: 100vh;
+  position: absolute;
+  background-color: black;
+}
+.create {
+  background-color: bisque;
+  top: 10%;
+  height: 80vh;
+  width: 100%;
 }
